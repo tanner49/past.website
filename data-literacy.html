@@ -11,7 +11,7 @@
   position: fixed;
   display: inline-block;
   cursor: pointer;
-  bottom:50%;
+  bottom:20%;
   left: 0;
   font-size: 80%;
   text-align: right;
@@ -33,7 +33,7 @@
   border-radius: 6px;
   padding: 8px 0;
   position: fixed;
-  bottom: 50%;
+  bottom: 20%;
   left: 0;
 }
 
@@ -65,7 +65,7 @@ div.bodycontainer{
 background-color: rgb(119,13,4);
 position: relative;
 width: 100%;
-height: 5000px;
+height: 3000px;
 border: 3px solid black;
 }
 
@@ -74,7 +74,7 @@ position: absolute;
 top: 5px;
 left: 5px;
 width: 57%;
-height: 4990px;
+height: 2990px;
 border: 3px solid black;
 background-color: white;
 padding: 2px;
@@ -85,26 +85,64 @@ position: absolute;
 top:5px;
 right: 5px;
 width: 42%;
-height: 4990px;
+height: 2990px;
 border: 3px solid black;
 background-color: white;
 padding: 2px;
 }
 
+div.leftwidget{
+margin: 3px;
+border: 1px solid grey;
+}
+
+div.rightwidget{
+margin: 3px;
+border: 1px solid grey;
+}
+
+
+
 </style>
 </head>
 
 <body>
-
+<header>
+<div>
+<h1 style="text-align: center;">Welcome to today's lesson!</h1>
+</div>
+</header>
 
 <div class= "bodycontainer">
+
 <div class="leftpanel">
-This is where the content will go.
+	<div class="leftwidget">
+	<ul>
+		<li>You are going to work through a series of activities today that are going to review some topics from 6th grade to help you be prepared for 7th grade material.</li>
+		<li>Complete all activities and be sure to read feedback and correct answers as your work your way through.</li>
+		<li>At the end you will take a short test on what you've learned.  Your goal is to get 80% on the assessment.</li>
+
+	</div>
 </div>
+
 <div class="rightpanel">
-This is where graphs and data will go.
+
+	<div class="rightwidget">
+	<ul>
+		<li><h2>Today's Goals:</h2></li>
+		<ul>
+			<li>Formulate statistical questions, organize and interpret data</li>
+			<li>Summarize data sets</li>
+			<li>Determine measures of center</li>	
+		</ul>
+	</ul>
+	</div>
+	<div class="rightwidget">
+		<h2> Coca-Cola Stock </h2>
+		<img src="https://raw.githubusercontent.com/tanner49/tanner49.github.io/master/Coke%20Stock.jpg" style="width: 90%; margin-left:auto; margin-right:auto;">
+	</div>
 </div>
-</div>
+
 <div class="popup" onclick="myFunction()" style="border-style:solid; padding: 2px; "><b>View <br> Key <br> Definitions </b>
   <span class="popuptext" id="myPopup">
   <ul>
@@ -123,6 +161,12 @@ This is where graphs and data will go.
     <b>Click to Close</b>
   </span>
 </div>
+
+<footer>
+<div>
+<h1 style="text-align: center;">Welcome to today's lesson!</h1>
+</div>
+</footer>
 <script>
 // When the user clicks on div, open the popup
 function myFunction() {
