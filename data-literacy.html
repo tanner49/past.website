@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Data Literacy Assignment</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">	
+
+
+/*start style sheet*/
+<style type="text/css">
+/* Popup container - can be anything you want */
+.popup {
+  position: fixed;
+  display: inline-block;
+  cursor: pointer;
+  bottom:50%;
+  left: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  background-color:  #f2f2f2;
+  color: black;
+  text-align: left;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: fixed;
+  bottom: 50%;
+  left: 0;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+
+<body>
+<div class="popup" onclick="myFunction()" style="border-style:solid; padding: 2px; "><b>View <br> Key <br> Definitions </b>
+  <span class="popuptext" id="myPopup">
+  <ul>
+		<li><b>mean</b> - the average of a data set found by finding the sum and dividing by the number of addends
+</li>
+		<li><b>median</b>-the middle number of an ordered data set or the average of the two middle numbers in an ordered data set with an even number of data
+ </li>
+		<li><b>range</b> - the difference between the greatest number and the least number in a data set
+</li>
+		<li><b>interquartile range</b> - the difference between the lower 25% and the lower 75%, the range the middle 50% lies.
+</li>
+		<li><b>data distribution</b> - an arrangement of values showing their frequency of occurrence
+</li>
+
+	</ul>
+    <b>Click to Close</b>
+  </span>
+</div>
+
+</body
+
+<script type="text/javascript">
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
+
+
+
+
+
+
