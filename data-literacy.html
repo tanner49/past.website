@@ -13,10 +13,14 @@
   cursor: pointer;
   bottom:50%;
   left: 0;
+  font-size: 80%;
+  text-align: right;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  padding: 10px;
+  width: 105px;
 }
 
 /* The actual popup */
@@ -60,33 +64,47 @@
 div.bodycontainer{
 background-color: rgb(119,13,4);
 position: relative;
-width: 900px;
+width: 100%;
 height: 5000px;
 border: 3px solid black;
 }
 
 div.leftpanel{
 position: absolute;
-top: 0;
+top: 5px;
 left: 5px;
-width: 500px;
-height: 4900px;
+width: 57%;
+height: 4990px;
 border: 3px solid black;
+background-color: white;
+padding: 2px;
 }
 
 div.rightpanel{
 position: absolute;
-right: 0;
-left: 5px;
-width: 370px;
-height: 4900px;
+top:5px;
+right: 5px;
+width: 42%;
+height: 4990px;
 border: 3px solid black;
+background-color: white;
+padding: 2px;
 }
 
 </style>
 </head>
 
 <body>
+
+
+<div class= "bodycontainer">
+<div class="leftpanel">
+This is where the content will go.
+</div>
+<div class="rightpanel">
+This is where graphs and data will go.
+</div>
+</div>
 <div class="popup" onclick="myFunction()" style="border-style:solid; padding: 2px; "><b>View <br> Key <br> Definitions </b>
   <span class="popuptext" id="myPopup">
   <ul>
@@ -105,16 +123,6 @@ border: 3px solid black;
     <b>Click to Close</b>
   </span>
 </div>
-
-<div class= "bodycontainer">
-<div class="leftpanel">
-This is where the content will go.
-</div>
-<div class="rightpanel">
-This is where graphs and data will go.
-</div>
-</div>
-
 <script>
 // When the user clicks on div, open the popup
 function myFunction() {
